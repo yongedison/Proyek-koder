@@ -1,31 +1,51 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web Pertama Yong</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #navy; /* Warna latar belakang gelap */
-            color: #pink;           /* Warna tulisan jadi kuning emas */
-            font-family: 'Arial', sans-serif;
-            text-align: center;       /* Semua tulisan ke tengah */
-            padding: 50px;
+            background: #0f0c29; 
+            background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 40px 20px;
         }
-        
-        img {
-            border: 5px solid white;  /* Kasih bingkai ke foto gitar */
-            border-radius: 50%;      /* Biar pojokan foto jadi melengkung */
-            width: 250px;
+        .foto {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Membuat foto jadi bulat sempurna */
+            border: 3px solid #f1c40f;
+            object-fit: cover;
         }
+        .tombol {
+            background: white;
+            color: #0f0c29;
+            display: block;
+            margin: 15px auto;
+            padding: 15px;
+            width: 100%;
+            max-width: 300px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s; /* Efek halus saat ditekan */
+        }
+        .tombol:active { transform: scale(0.95); } /* Efek membal saat diklik */
     </style>
 </head>
 <body>
 
-    <h1>Website yongedison</h1>
-    <p>Sedang belajar mencintai asti rayani!</p>
-    
-  <img src="astor.jpg">
+    <img src="zull.jpg" class="foto">
+    <h1>yongedison</h1>
+    <p>Gitaris | Learner | Coder</p>
 
+    <a href="https://www.instagram.com/yongedison_?igsh=N2lyaGRpdHpieG1m&utm_source=qr" class="tombol">Instagram</a>
+    <a href="https://wa.me/6285624460706" class="tombol">WhatsApp Me</a>
+    <a href="https://www.tiktok.com/@zllllnnn?_r=1&_t=ZS-94Yr4GxLej6" class="tombol" style="background:#f1c40f">Support My Music 🎸</a>
 
 </body>
 </html>
