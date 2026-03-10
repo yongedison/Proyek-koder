@@ -3,90 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yong Edison | Guitarist & Coder</title>
+    <title>Yong Edison | Artist & Developer</title>
     
-    <meta property="og:title" content="Yong Edison - Support My Music">
-    <meta property="og:description" content="Gitaris | Belajar Coding dari Smartphone">
+    <meta property="og:title" content="Yong Edison - Official Linktree">
+    <meta property="og:description" content="Guitarist | Coding Enthusiast | Music Creator">
     <meta property="og:image" content="https://yongedison.github.io/Proyek-koder/zull.jpg">
 
     <style>
+        /* 1. ANIMASI BACKGROUND NEBULA */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         body {
-            /* Gradasi Ungu Gelap ke Hitam */
-            background: linear-gradient(135deg, #2c003e 0%, #0f0c29 100%);
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #2c003e);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .container {
+            width: 90%;
             max-width: 400px;
-            margin: auto;
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05); /* Efek Kaca */
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.5);
+        }
+
+        /* 2. FOTO PROFIL DENGAN EFEK PULSA */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(241, 196, 15, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(241, 196, 15, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(241, 196, 15, 0); }
         }
 
         .foto {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid #f1c40f; /* Bingkai Kuning Emas */
+            border: 3px solid #f1c40f;
             object-fit: cover;
-            box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
         }
 
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
-        p {
+        .sub-text {
             font-size: 0.9rem;
-            color: #bdc3c7;
+            color: #ecf0f1;
             margin-bottom: 30px;
+            opacity: 0.8;
         }
 
+        /* 3. TOMBOL GLASSMORPHISM DENGAN HOVER GLOW */
         .tombol {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: rgba(255, 255, 255, 0.1);
             color: white;
             text-decoration: none;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            font-weight: bold;
+            padding: 16px;
+            margin-bottom: 18px;
+            border-radius: 50px;
+            font-weight: 600;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px); /* Efek kaca transparan */
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .tombol:hover {
             background: #f1c40f;
             color: #0f0c29;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(241, 196, 15, 0.6);
         }
 
-        /* Warna khusus untuk tombol utama */
         .highlight {
-            background: #f1c40f;
+            background: linear-gradient(90deg, #f1c40f, #f39c12);
             color: #0f0c29;
             border: none;
+        }
+
+        .highlight:hover {
+            box-shadow: 0 0 30px rgba(243, 156, 18, 0.8);
+        }
+
+        /* Footer Sederhana */
+        footer {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="astor.jpg" class="foto" alt="Yong Edison">
+        <img src="zull.jpg" class="foto" alt="Yong Edison">
         
-        <h1>Yong Edison</h1>
-        <p>🎸 Guitarist | 💻 Mobile Coder</p>
-        <a href="https://www.instagram.com/yongedison_?igsh=N2lyaGRpdHpieG1m&utm_source=qr" class="tombol">Follow My Instagram 📸</a>
-        <a href="https://www.tiktok.com/@zllllnnn?_r=1&_t=ZS-94Z0aRum0tY" class="tombol highlight">Support My Music (TikTok) 🎸</a>
-        <a href="https://wa.me/6285624460706" class="tombol">Hubungi Saya (WhatsApp) 📱</a>
-        <a href="https://github.com/yongedison" class="tombol">My GitHub Projects 💻</a>
+        <h1>YONG EDISON</h1>
+        <div class="sub-text">🎸 Guitarist • 💻 Dev • 🇮🇩 Indo</div>
+
+        <a href="https://www.tiktok.com/@zllllnnn" class="tombol highlight">NEW COVER ON TIKTOK ⚡</a>
+        <a href="https://www.instagram.com/yongedison_" class="tombol">INSTAGRAM 📸</a>
+        <a href="https://wa.me/628624460706" class="tombol">WHATSAPP CHAT 📱</a>
+        <a href="https://github.com/yongedison" class="tombol">GITHUB PROJECTS 🚀</a>
+
+        <footer>© 2024 Created by Yong with Smartphone</footer>
     </div>
 
 </body>
