@@ -131,6 +131,24 @@
 
         <footer>© 2024 Created by Yong with Smartphone</footer>
     </div>
+<script>
+    // Ini adalah kode JavaScript
+    const waktu = new Date().getHours();
+    let salam;
+
+    if (waktu < 11) {
+        salam = "Selamat Pagi, Rockstars! 🎸";
+    } else if (waktu < 15) {
+        salam = "Selamat Siang, Bro! 🔥";
+    } else if (waktu < 19) {
+        salam = "Selamat Sore, Chill dulu... ☕";
+    } else {
+        salam = "Selamat Malam, Gas Terus! 🌙";
+    }
+
+    // Mengganti teks di sub-text dengan salam otomatis
+    document.querySelector('.sub-text').innerHTML = salam;
+</script>
 
 </body>
 </html>
