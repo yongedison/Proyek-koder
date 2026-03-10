@@ -1,53 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yong Edison | Guitarist & Coder</title>
+    
     <meta property="og:title" content="Yong Edison - Support My Music">
-    <meta property="og:description" content="Koleksi link musik dan sosial media saya.">
-    <meta property="og:image" content="zull.jpg">
-</head> <style>
-    body {
-            background: #0f0c29; 
-            background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    <meta property="og:description" content="Gitaris | Belajar Coding dari Smartphone">
+    <meta property="og:image" content="https://yongedison.github.io/Proyek-koder/zull.jpg">
+
+    <style>
+        body {
+            /* Gradasi Ungu Gelap ke Hitam */
+            background: linear-gradient(135deg, #2c003e 0%, #0f0c29 100%);
             color: white;
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
+            margin: 0;
             padding: 40px 20px;
+            min-height: 100vh;
         }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
         .foto {
             width: 120px;
             height: 120px;
-            border-radius: 50%; /* Membuat foto jadi bulat sempurna */
-            border: 3px solid #f1c40f;
+            border-radius: 50%;
+            border: 4px solid #f1c40f; /* Bingkai Kuning Emas */
             object-fit: cover;
+            box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
+            margin-bottom: 15px;
         }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
         .tombol {
-            background: white;
-            color: #0f0c29;
             display: block;
-            margin: 15px auto;
-            padding: 15px;
-            width: 100%;
-            max-width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
             text-decoration: none;
-            border-radius: 50px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
             font-weight: bold;
-            transition: 0.3s; /* Efek halus saat ditekan */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px); /* Efek kaca transparan */
         }
-        .tombol:active { transform: scale(0.95); } /* Efek membal saat diklik */
+
+        .tombol:hover {
+            background: #f1c40f;
+            color: #0f0c29;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Warna khusus untuk tombol utama */
+        .highlight {
+            background: #f1c40f;
+            color: #0f0c29;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
-    <img src="zull.jpg" class="foto">
-    <h1>yongedison</h1>
-    <p>Gitaris | Learner | Coder</p>
+    <div class="container">
+        <img src="astor.jpg" class="foto" alt="Yong Edison">
+        
+        <h1>Yong Edison</h1>
+        <p>🎸 Guitarist | 💻 Mobile Coder</p>
 
-    <a href="https://www.instagram.com/yongedison_?igsh=N2lyaGRpdHpieG1m&utm_source=qr" class="tombol">Instagram</a>
-    <a href="https://wa.me/6285624460706" class="tombol">WhatsApp Me</a>
-    <a href="https://www.tiktok.com/@zllllnnn?_r=1&_t=ZS-94Yr4GxLej6" class="tombol" style="background:#f1c40f">Support My Music 🎸</a>
+        <a href="https://www.tiktok.com/@username_kamu" class="tombol highlight">Support My Music (TikTok) 🎸</a>
+        <a href="https://wa.me/628123456789" class="tombol">Hubungi Saya (WhatsApp) 📱</a>
+        <a href="https://github.com/yongedison" class="tombol">My GitHub Projects 💻</a>
+    </div>
 
 </body>
 </html>
