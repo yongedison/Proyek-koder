@@ -1,16 +1,14 @@
-# Halo, Saya yongedison 👋
+# 📇 Professional Digital Business Card
 
-🎸 **Gitaris | 💻 Belajar Coding dari Smartphone**
+A high-end, custom-coded digital profile card designed to showcase links and brand identity with a modern touch.
 
-Saya adalah seorang pecinta musik yang sedang mendalami dunia pemrograman langsung dari HP. 
+### 📱 The Mobile Challenge
+This project was **100% hand-coded on an iPhone XR** using the Koder app. It proves that professional development can happen anywhere, even without a laptop.
 
-### 🚀 Apa yang Saya Pelajari:
-* **Logika Pemrograman:** Menggunakan **Python** di aplikasi mobile.
-* **Web Development:** Membangun antarmuka visual menggunakan **HTML & CSS**.
-* **Mobile Coding:** Eksperimen dengan Code Editor & GitHub langsung dari genggaman.
+### ✨ Key Features
+* **Custom UI:** Modern aesthetics with smooth transitions.
+* **Mobile-First Design:** Perfect responsiveness across all devices.
+* **Clean Code:** Built with semantic HTML5 and CSS3.
 
-### 🛠️ Proyek Saat Ini:
-* **[Linktree Pribadi](https://yongedison.github.io/Proyek-koder/))**: Kartu nama digital pertama saya yang dibuat murni dari kode.
-
----
-*"Belajar coding itu seperti ngulik lagu baru; butuh waktu, tapi hasilnya pasti merdu."*
+### 🔗 Live Demo
+[Click Here to View My Profile Card](https://yongedison.github.io/Proyek-koder/)
