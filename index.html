@@ -39,9 +39,12 @@
             padding: 40px 20px;
             background: rgba(255, 255, 255, 0.05); /* Efek Kaca */
             backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border-radius: 30px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 25px 45px rgba(0,0,0,0.5);
+            margin: 40px 0;
+            box-sizing: border-box;
         }
 
         /* 2. FOTO PROFIL DENGAN EFEK PULSA */
@@ -73,6 +76,7 @@
             color: #ecf0f1;
             margin-bottom: 30px;
             opacity: 0.8;
+            min-height: 24px;
         }
 
         /* 3. TOMBOL GLASSMORPHISM DENGAN HOVER GLOW */
@@ -89,6 +93,7 @@
             font-weight: 600;
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-sizing: border-box;
         }
 
         .tombol:hover {
@@ -105,14 +110,19 @@
         }
 
         .highlight:hover {
+            background: linear-gradient(90deg, #f39c12, #f1c40f);
+            color: #0f0c29;
             box-shadow: 0 0 30px rgba(243, 156, 18, 0.8);
         }
 
-        /* Footer Sederhana */
+        /* Footer Tetap Aman di Dalam Kontainer */
         footer {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 0.7rem;
             opacity: 0.5;
+            line-height: 1.4;
+            display: block;
+            width: 100%;
         }
     </style>
 </head>
@@ -125,30 +135,34 @@
         <div class="sub-text">🎸 Guitarist • 💻 Dev • 🇮🇩 Indo</div>
 
         <a href="https://www.tiktok.com/@zlnnn173" class="tombol highlight">Follow my Tiktok ⚡</a>
-        <a href="https://www.instagram.com/yongedison_" class="tombol">Follow my Instagram 📸</a>
+        
+        <a href="https://mobile.capcutshare.com/sv2/ZS9XnBP3x/" class="tombol">Follow my Capcut 👾</a>
+        
         <a href="https://wa.me/6258624460706" class="tombol">Let's Talk on WhatsApp 📱</a>
+        
         <a href="https://github.com/yongedison" class="tombol">My Coding Portfolio (GitHub) 🚀</a>
-        <a href="https://mobile.capcutshare.com/sv2/ZS9XnBP3x/" class="tombol highlight"> Follow my Capcut👾</a>
-
+        
+        <a href="https://saweria.co/Yongedison" class="tombol">Apresiasi Karya (Saweria) 🙏</a>
+        
+        <a href="https://www.paypal.me/zllannn" class="tombol highlight">Buy Me a Coffee (PayPal) ☕</a>
+        
         <footer>© 2026 High-Quality Digital Card | Built by Yong via Mobile</footer>
     </div>
+
 <script>
-    // Ini adalah kode JavaScript
     const waktu = new Date().getHours();
     let salam;
 
     if (waktu < 11) {
-  salam = "Good morning, Sunshine! ☀️";
-} else if (waktu < 15) {
-  salam = "Good afternoon! Hope you're having a great day! 🔥";
-} else if (waktu < 19) {
-  salam = "Good evening! Time to chill... ☕";
-} else {
-  salam = "Good night! Sweet dreams! 🌙";
-}
+        salam = "Good morning, Sunshine! ☀️";
+    } else if (waktu < 15) {
+        salam = "Good afternoon! Hope you're having a great day! 🔥";
+    } else if (waktu < 19) {
+        salam = "Good evening! Time to chill... ☕";
+    } else {
+        salam = "Good night! Sweet dreams! 🌙";
+    }
 
-
-    // Mengganti teks di sub-text dengan salam otomatis
     document.querySelector('.sub-text').innerHTML = salam;
 </script>
 
